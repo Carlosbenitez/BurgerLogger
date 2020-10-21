@@ -1,19 +1,67 @@
-li {
-  padding: 5px;
-  margin: 5px;
-  background: #faebd7;
+html *
+{
+  align-items: center;
+  text-align: center;
+  align-content: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.label {
+h1{
+  font-weight: bolder;
+  font-size: 80px;
+}
+
+ul{
+margin-left: 25%;
+margin-right: 25%;
+display: block;
+list-style-type: none;
+}
+
+body {
+  background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+}
+
+.change-devoured, .delete-burger {
+    background-color: rgba(240, 255, 255, 0.836)
+}
+
+.saved li{
+  background-color: green;
+}
+
+.saved li::before{
+  content: "\1F354";
+  margin-left: -20px;
+  margin-right: 10px;
+}
+.devoured li{
+background-color: red;
+}
+
+.devoured li::before{
+  content:"\1F37D";
+  margin-left: -20px;
+  margin-right: 10px;
+}
+
+div{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#nameForm{
+  font-size: x-large;
   font-weight: bold;
 }
 
-.create-update-form {
-  padding: 5px;
-  margin: 5px;
-  background: aqua;
+#devourForm{
+  font-size: large;
+  font-weight: bold;
 }
 
-.form-group {
+li{
+  border: black dotted 2px;
+  margin-top: 5px;
   margin-bottom: 5px;
 }
